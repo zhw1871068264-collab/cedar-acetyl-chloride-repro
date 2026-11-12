@@ -1,0 +1,49 @@
+rank,src,dst,val,tier,basis_zh,basis_en
+1,JKT-P1,JKT-T1,0.0603703111410141,D,夹套压力与温度符合蒸汽侧热力学,jacket pressure and temperature follow steam-side thermodynamics
+2,JKT-P1,KTL-T1,0.007347247563302517,D,蒸汽侧状态经夹套壁传至釜温,steam-side state reaches pot temperature through the jacket wall
+3,JKT-T1,CND-TA1,0.004440130200237036,I,热负荷经汽化与塔系统传到二级冷凝侧,heat load passes the column to the second condenser stage
+4,RFD-F1,KTL-I1,0.004097278695553541,N,采出流量与搅拌负荷无共同机制，仅随阶段同步,no shared mechanism for draw-off flow and agitator load
+5,CND-T4,KTL-T1,0.0030304796528071165,I,冷媒温度与釜温经负荷与反馈耦合,brine temperature and pot temperature coupled by load and feedback
+6,KTL-I1,CND-T1,0.001479567144997418,N,搅拌负荷至循环水出口无直接路径,no direct path from agitator load to cooling-water outlet
+7,CND-T3,KTL-I1,0.001031584688462317,N,盐水温度与搅拌负荷仅共阶段,brine I temperature and agitator load share only the stage
+8,CND-T4,KTL-I1,0.0009597560274414718,N,冷媒温度与搅拌负荷无共同机制,no mechanism between brine II temperature and agitator load
+9,JKT-P1,JKT-F1,0.0005954456282779574,D,夹套压力与蒸汽流量构成供汽回路,jacket pressure and steam flow form the supply loop
+10,ITK-L1,RFD-F1,0.0004871746350545436,D,中间罐液位经泵与阀决定采出流量,tank level sets draw-off flow through pump and valve
+11,ITK-T1,RFD-F1,0.0001999790547415614,I,罐温通过采出切换与负荷间接影响采出,tank temperature acts on draw-off through switching and load
+12,JKT-T1,ITK-P1,-0.00017923463019542396,I,加热状态与接收压力同为批次阶段代理,heat state and receiver pressure proxy the same stage
+13,COL-T1,JKT-P1,0.00016271110507659614,I,塔顶温度经控制器反馈到夹套供汽,top temperature feeds back to jacket steam supply
+14,JKT-P1,ITK-T1,0.00015805110160727054,I,热输入经塔与采出路径影响接收温度,heat input reaches receiver temperature through column and draw-off
+15,CND-TA1,COL-P2,0.00014457892393693328,I,冷凝出口与塔中上压力存在压力反馈,condenser outlet and upper pressure linked by pressure feedback
+16,COL-T3,RFD-F1,0.00013918323384132236,I,塔中温经阶段与采出控制间接作用,mid-column temperature acts through stage and draw-off control
+17,CND-TA2,RFD-L1,0.00013444047363009304,D,二级冷凝出口冷凝液进入回流罐,second-stage condensate feeds the reflux drum
+18,RFD-L1,KTL-T1,0.00010050454147858545,I,液位经回流切换改变釜内热平衡,drum level changes the pot heat balance through reflux switching
+19,RFD-L1,CND-T1,7.216040103230625e-05,I,回流切换改变冷凝器负荷与出口温度,reflux switching changes condenser load and outlet temperature
+20,COL-P2,CND-T4,6.803822179790586e-05,I,塔内压力与冷媒负荷经真空系统耦合,column pressure and brine load coupled through the vacuum system
+21,RFD-P1,JKT-P1,6.629005656577647e-05,I,回流罐压力经真空与控制反馈影响供汽,drum pressure reaches steam supply through vacuum and control
+22,JKT-F1,CND-TA2,6.49786670692265e-05,I,供汽流量经塔负荷跨级代理到二级冷凝,steam flow proxies condenser load across stages
+23,CND-T3,ITK-P1,5.808959758724086e-05,N,盐水温度与接收压力无共同机制,no mechanism between brine I and receiver pressure
+24,COL-P2,CND-T1,5.5379954574164e-05,N,塔压与循环水出口无直接路径,no direct path from column pressure to cooling-water outlet
+25,CND-TA1,JKT-F1,5.17808148288168e-05,I,冷凝出口经联锁与供汽流量构成反馈,condenser outlet feeds back to steam flow through interlock
+26,ITK-L1,CND-TA2,-4.4649463234236464e-05,N,罐液位与冷凝出口温度无共同机制,no mechanism between tank level and condenser outlet
+27,CND-TA2,COL-P1,-4.226786404615268e-05,I,冷凝出口与塔顶压力构成真空反馈,condenser outlet and top pressure form vacuum feedback
+28,RFD-F1,COL-T2,4.0161528886528686e-05,N,采出流量与塔中温无直接路径,no direct path from draw-off flow to mid-column temperature
+29,ITK-P1,CND-T1,3.724193447851576e-05,N,接收压力与循环水出口无共同机制,no mechanism between receiver pressure and cooling-water outlet
+30,COL-P2,CND-TA2,3.64885781891644e-05,I,塔压经真空系统影响冷凝液量,column pressure affects condensate load through vacuum
+31,RFD-P1,CND-TA1,3.4581473300931975e-05,I,罐压经真空系统影响冷凝出口温度,drum pressure affects condenser outlet through vacuum
+32,KTL-P1,CND-T1,2.722570570767857e-05,N,釜压与循环水出口无直接路径,no direct path from pot pressure to cooling-water outlet
+33,KTL-I1,ITK-P1,2.6855683245230466e-05,N,搅拌负荷与接收压力无共同机制,no mechanism between agitator load and receiver pressure
+34,KTL-I1,RFD-L1,2.6640615033102222e-05,N,搅拌负荷与回流罐液位无共同机制,no mechanism between agitator load and drum level
+35,COL-P2,RFD-T1,2.304483496118337e-05,I,塔压经真空与采出路径影响回流罐温度,column pressure reaches drum temperature through vacuum and draw-off
+36,COL-T4,KTL-P1,2.1011795979575254e-05,D,塔底汽相压力向上游釜压传播,column-bottom vapour pressure propagates to pot pressure
+37,JKT-F1,CND-T1,2.0077903172932565e-05,N,供汽流量与循环水出口无直接路径,no direct path from steam flow to cooling-water outlet
+38,CND-T1,ITK-L1,1.7483456758782268e-05,N,循环水出口与罐液位无共同机制,no mechanism between cooling-water outlet and tank level
+39,COL-P3,KTL-I1,1.6888787286006846e-05,N,塔底压力与搅拌负荷无共同机制,no mechanism between bottom pressure and agitator load
+40,CND-TA2,KTL-P1,1.6265910744550638e-05,N,冷凝出口与釜压无直接路径,no direct path from condenser outlet to pot pressure
+41,KTL-P1,CND-T3,1.4649371223640628e-05,N,釜压与盐水温度无直接路径,no direct path from pot pressure to brine I temperature
+42,KTL-T1,KTL-P1,1.1347683539497666e-05,D,釜温与釜压符合汽液平衡,pot temperature and pressure follow vapour-liquid equilibrium
+43,COL-P3,RFD-F1,7.4381182457727846e-06,I,塔底压力经采出控制间接作用,bottom pressure acts on draw-off through control
+44,ITK-V1,RFD-T1,4.593627181748161e-06,I,过渡组分控制信号作用于采出与罐温,transition-control signal acts on draw-off and drum temperature
+45,ITK-V1,CND-TA1,3.6189226193528157e-06,N,控制量与冷凝出口温度无共同机制,no mechanism between control signal and condenser outlet
+46,KTL-I1,RFD-P1,2.3488296392315533e-06,N,搅拌负荷与罐压无共同机制,no mechanism between agitator load and drum pressure
+47,ITK-V1,RFD-L1,2.169059882817237e-07,N,控制量与罐液位无共同机制,no mechanism between control signal and drum level
+48,ITK-V1,KTL-T1,4.8059813906320414e-08,N,控制量与釜温无共同机制,no mechanism between control signal and pot temperature

@@ -1,0 +1,28 @@
+﻿id,src,dst,class,basis_zh,basis_en,result,matched_edge,edge_val
+A1,JKT-F1,JKT-T1,A,蒸汽流量增加使夹套温度上升,Steam flow raises jacket temperature,未检出,,
+A2,JKT-P1,JKT-T1,A,夹套压力与温度符合蒸汽侧热力学,Jacket pressure and temperature follow steam-side thermodynamics,同向检出,JKT-P1->JKT-T1,0.0603703111410141
+A3,JKT-P1,JKT-F1,A,夹套压力驱动蒸汽流量,Jacket pressure drives steam flow,同向检出,JKT-P1->JKT-F1,0.0005954456282779574
+A4,JKT-F1,KTL-T1,A,蒸汽流量经夹套向釜内传热,Steam flow heats the pot through the jacket,未检出,,
+A5,JKT-T1,KTL-T1,A,夹套温度经釜壁向物料传热,Jacket temperature heats the charge through the wall,未检出,,
+A6,KTL-T1,KTL-P1,A,釜温升高使釜内蒸气压上升,Pot temperature raises pot vapour pressure,同向检出,KTL-T1->KTL-P1,1.1347683539497666e-05
+A7,KTL-I1,KTL-T1,A,搅拌改善传热，负荷影响釜温,Agitation improves heat transfer and affects pot temperature,未检出,,
+A8,KTL-T1,COL-T4,A,釜内汽化推动塔底温度响应,Pot vaporisation drives the column-bottom temperature,未检出,,
+A9,COL-T4,COL-T3,A,塔内汽相自下而上逐级传递,Vapour passes upward section by section,未检出,,
+A10,COL-T3,COL-T2,A,同上，塔内汽相逐级传递,Vapour passes upward section by section,未检出,,
+A11,COL-T2,COL-T1,A,同上，塔内汽相逐级传递,Vapour passes upward section by section,未检出,,
+A12,COL-P1,COL-P2,A,塔内压降沿轴向由顶向底传递,Pressure drop propagates from top to bottom,未检出,,
+A13,COL-P2,COL-P3,A,同上，塔内压降沿轴向传递,Pressure drop propagates from top to bottom,未检出,,
+A14,CND-TA2,CND-TA1,A,一级冷凝出口至二级冷凝入口,First-stage outlet feeds the second stage,未检出,,
+A15,CND-TA1,CND-T3,A,二级冷凝出口至三级盐水冷凝,Second-stage outlet feeds the brine stage,未检出,,
+A16,RFD-F1,RFD-L1,A,采出使回流罐液位下降,Draw-off lowers the reflux-drum level,未检出,,
+A17,ITK-L1,ITK-T1,A,中间罐液位与温度同受进料影响,Tank level and temperature share the feed,未检出,,
+A18,RFD-T1,RFD-P1,A,回流罐温度与压力符合气相热力学,Drum temperature and pressure follow vapour thermodynamics,未检出,,
+B1,CND-TA2,RFD-L1,B,冷凝量经一级出口进入回流罐库存,Condensate from the first-stage outlet builds drum inventory,同向检出,CND-TA2->RFD-L1,0.00013444047363009304
+B2,COL-P1,CND-TA2,B,塔顶压力决定冷凝温度（冷凝—真空反馈）,Column-top pressure sets condensation temperature (vacuum feedback),反向,CND-TA2->COL-P1,-4.226786404615268e-05
+B3,RFD-F1,ITK-L1,B,采出向中间罐形成库存（液位—采出闭环）,Draw-off builds tank inventory (level-draw-off loop),反向,ITK-L1->RFD-F1,0.0004871746350545436
+B4,ITK-V1,ITK-L1,B,过渡组分控制信号作用于中间罐液位,Transition-control signal acts on tank level,未检出,,
+B5,COL-T1,RFD-F1,B,塔顶温度达标触发采出,Column-top temperature releases draw-off,未检出,,
+B6,KTL-T1,RFD-F1,B,釜温反映批次进程，决定采出量,Pot temperature marks batch progress and sets draw-off,未检出,,
+B7,CND-T1,COL-P1,B,循环水出口温度与塔顶真空耦合,Cooling-water outlet couples with top vacuum,未检出,,
+B8,CND-T3,COL-P2,B,盐水 I 冷媒温度与塔中部压力耦合,Brine I temperature couples with mid-column pressure,未检出,,
+B9,CND-T4,COL-P3,B,盐水 II 深冷与塔底压力耦合,Brine II temperature couples with bottom pressure,未检出,,

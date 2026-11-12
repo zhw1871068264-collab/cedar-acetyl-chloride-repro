@@ -1,0 +1,29 @@
+{
+  "raw_rows": 97378,
+  "rows_4s": 24345,
+  "n_vars": 27,
+  "start": "2026-09-16 04:25:22",
+  "end": "2026-09-17 07:28:18",
+  "hours": 27.05,
+  "n_edges_total": 75,
+  "n_edges_cross": 48,
+  "n_autoreg": 27,
+  "n_tests": 1323,
+  "density": 6.84,
+  "topo_same_unit": 3,
+  "topo_adj_flow": 9,
+  "topo_adj_rev": 6,
+  "topo_far": 30,
+  "acf_median": 1.0,
+  "acf_min": 0.952,
+  "acf_max": 1.0,
+  "acf_over_08": 27,
+  "stage_ramp": [],
+  "stage_prod": [
+    "2026-09-16 09:54:22",
+    "2026-09-16 20:10:26"
+  ],
+  "edge_abs_max": 0.06037,
+  "edge_abs_min": 0.0,
+  "edge_abs_sum": 0.08597
+}
